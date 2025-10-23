@@ -16,6 +16,21 @@ I want to add tracks I've listened to and see a list of them.
 _Include the initializer, public properties, and public methods with all parameters, return values, and side-effects._
 
 ```python
+class MusicTracker():
+    #Tracks: a list of strings
+    def __init__(self):
+        # Creates an empty list
+    def add_track(self, track_name):
+        #Parameters
+        # Represents name of track
+        #Side effects
+        #Saves track to the track list
+    
+    def list_tracks(self)
+    #Returns track list
+
+    def check_valid_type(self, track_var)
+    #If the track variable is valid, it will return True.
 # EXAMPLE
 
 class Reminder:
@@ -51,6 +66,34 @@ class Reminder:
 _Make a list of examples of how the class will behave in different situations._
 
 ``` python
+
+"""
+If an instance of music tracker is made, make sure that it is instantiated properly
+"""
+
+music_tracker = MusicTracker()
+result = isinstance(music_tracker, MusicTracker)
+
+"""
+Given a track name, it should add a track to the 
+track list
+"""
+m_t = MusicTracker()
+m_t.add_track("Fergalicious")
+result = "Fergalicious"
+
+"""
+When called, it should return the track list
+"""
+m_t = MusicTracker()
+result = m_t.list_tracks()
+"""
+If given an invalid type for the track, it should give an error message
+"""
+m_t = MusicTracker()
+m_t.add_track(05)
+result = "Invalid track name!"
+
 # EXAMPLE
 
 """
